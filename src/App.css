@@ -7,14 +7,14 @@
   font-family: 'Lato', sans-serif;
 }
 
-.Empleados, .Clientes {
+.Empleados, .Clientes, .Productos {
   margin-left:250px;
   padding: 20px;
 }
 
 @media screen and (max-width: 1000px){
-  .Empleados, .Clientes {
-    margin-left:20px;
-    padding: 0;
+  .Empleados, .Clientes, .Productos {
+    margin-left:0;
+    padding: 5px;
   }
 }

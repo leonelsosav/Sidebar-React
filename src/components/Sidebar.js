@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
-import './sidebar.css'
+import './designs/sidebar.css'
 import { useState, useEffect } from 'react'
 import { IconContext } from 'react-icons'
-import Logo from '../assets/logo.png'
 import * as FaIcons from 'react-icons/fa'
 
 const Sidebar = () => {
@@ -28,7 +27,6 @@ const Sidebar = () => {
                     <Link to="#" className="menu-bars" onClick={toggleSidebar}>
                         <FaIcons.FaBars />
                     </Link>
-                    <h1 className="titulo">Kasterz</h1>
                 </div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: '#fff' }}>
@@ -36,7 +34,7 @@ const Sidebar = () => {
                     <ul>
                         {SidebarData.map((value, index) => {
                             return (
-                                <li key={index} className={value.clase}>
+                                <li key={index} className={value.clase} onClick={value.click && value.click}>
                                     <Link to={value.ruta}>
                                         {value.icono}
                                         <span>{value.titulo}</span>

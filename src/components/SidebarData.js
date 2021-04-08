@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaUserTie, FaUsers } from "react-icons/fa";
+import { FaUserTie, FaUsers, FaShoppingCart, FaSignOutAlt } from "react-icons/fa";
 
 export const SidebarData = [
     {
@@ -17,7 +17,14 @@ export const SidebarData = [
     {
         titulo: "Productos",
         ruta: "/productos",
-        icono: <FaUsers/>,
+        icono: <FaShoppingCart/>,
         clase: "sidebar-text" 
+    },
+    {
+        titulo: "Cerrar Sesion",
+        ruta: "/",
+        icono: <FaSignOutAlt/>,
+        clase: "sidebar-text",
+        click: () => {console.log("hola")} 
     }
 ]

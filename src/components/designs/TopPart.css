@@ -1,0 +1,38 @@
+.logo {
+    max-height: 150px;
+    display: block;
+    margin:auto;
+}
+
+.saludo {
+    font-size: 2rem;
+    color: #060b26;
+}
+
+.btnNuevo{
+    color: #060b26;
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+    border: 2px solid #060b26;
+    background-color: #FFF;
+}
+
+.btnNuevo:hover {
+    border: 2px solid white;
+    background-color: #060b26;
+    color: white;
+}
+
+.titulo {
+    color: #060b26;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .saludo, .btnNuevo {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+  }

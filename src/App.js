@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Empleados from './pages/Empleados'
 import Clientes from './pages/Clientes'
-import Productos from './pages/productos'
+import Productos from './pages/Productos'
 import './App.css';
 
 function App() {
