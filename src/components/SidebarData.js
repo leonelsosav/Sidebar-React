@@ -13,5 +13,11 @@ export const SidebarData = [
         ruta: "/clientes",
         icono: <FaUsers/>,
         clase: "sidebar-text" 
+    },
+    {
+        titulo: "Productos",
+        ruta: "/productos",
+        icono: <FaUsers/>,
+        clase: "sidebar-text" 
     }
 ]

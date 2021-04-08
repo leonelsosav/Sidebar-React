@@ -9,10 +9,12 @@
 
 .Empleados, .Clientes {
   margin-left:250px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1000px){
   .Empleados, .Clientes {
     margin-left:20px;
+    padding: 0;
   }
 }

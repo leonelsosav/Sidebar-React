@@ -28,6 +28,7 @@ const Sidebar = () => {
                     <Link to="#" className="menu-bars" onClick={toggleSidebar}>
                         <FaIcons.FaBars />
                     </Link>
+                    <h1 className="titulo">Kasterz</h1>
                 </div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: '#fff' }}>
