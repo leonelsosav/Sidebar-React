@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { SidebarData } from './SidebarData'
+import SidebarData from '../Logic/SidebarData'
 import '../Style/sidebar.css'
 import { useState, useEffect } from 'react'
 import { IconContext } from 'react-icons'
@@ -32,7 +32,7 @@ const Sidebar = () => {
             <IconContext.Provider value={{ color: '#fff' }}>
                 <nav className={sidebar ? 'menu active' : 'menu'}>
                     <ul>
-                        {SidebarData.map((value, index) => {
+                        {SidebarData.data.map((value, index) => {
                             return (
                                 <li key={index} className={value.clase}>
                                     <Link to={value.ruta}>
