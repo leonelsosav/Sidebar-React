@@ -1,7 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Empleados from './pages/Empleados'
-import Clientes from './pages/Clientes'
-import Productos from './pages/Productos'
+import Home from './pages/Home'
+import Home2 from './pages/Home2'
 import './App.css';
 
 function App() {
@@ -9,9 +8,8 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" exact component={Empleados}></Route>
-          <Route path="/clientes" component={Clientes}></Route>
-          <Route path="/productos" component={Productos}></Route>
+          <Route path="/" exact component={Home}></Route>
+          <Route path="/home2" component={Home2}></Route>
         </Switch>
       </Router>
     </>

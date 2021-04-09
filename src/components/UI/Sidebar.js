@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
-import './designs/sidebar.css'
+import '../Style/sidebar.css'
 import { useState, useEffect } from 'react'
 import { IconContext } from 'react-icons'
 import * as FaIcons from 'react-icons/fa'
@@ -34,7 +34,7 @@ const Sidebar = () => {
                     <ul>
                         {SidebarData.map((value, index) => {
                             return (
-                                <li key={index} className={value.clase} onClick={value.click && value.click}>
+                                <li key={index} className={value.clase}>
                                     <Link to={value.ruta}>
                                         {value.icono}
                                         <span>{value.titulo}</span>
